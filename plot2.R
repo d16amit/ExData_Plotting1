@@ -14,7 +14,7 @@ plot2 <- function() {
  	
 	## create PNG file
 	if(! dev.cur()==1) {dev.off()}
-	png(file="plot2.png",width = 480, height = 480)	
+	png(file="plot2.png",width = 480, height = 480,bg="transparent")	
 	## Plot 2 line plot
 		 
 	plot(sdat$DateTime, sdat$numGlobal_active_power,pch=NA_integer_,xlab="",ylab="Global Active Power (kilowatts)")

@@ -14,7 +14,7 @@ plot1 <- function() {
  	
 	## create PNG file
 	if(! dev.cur()==1) {dev.off()}
-	png(file="plot1.png,width = 480, height = 480")	
+	png(file="plot1.png",width = 480, height = 480,bg="transparent")	
 	## Plot 1 Histogram
 	 hist(sdat$numGlobal_active_power,main="Global Active Power", col="red",xlab="Global Active Power (kilowatts)")
 
